@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8002
 #  context-path: /member
 eureka:
   client:
@@ -7,7 +7,7 @@ eureka:
       defaultZone: http://140.143.154.143:8761/eureka/
 spring:
   application:
-    name: member-server
+    name: order-server
 #  redis:
 #    host: 47.100.50.60
 #    password: 123
@@ -48,6 +48,7 @@ spring:
 ##队列      
 #messages:
 #   queue: messages_queue
-
- 
+feign:
+  hystrix:
+    enabled: true
     
