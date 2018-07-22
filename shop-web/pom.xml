@@ -6,4 +6,22 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>shop-web</artifactId>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>com.pan.shop</groupId>
+	    <artifactId>shop-api-member</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  		<dependency>
+  		<groupId>com.pan.shop</groupId>
+	    <artifactId>shop-api-order</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+  
+  </dependencies>
 </project>
